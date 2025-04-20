@@ -9,6 +9,24 @@ A full-stack job board application built with **Next.js**, **TailwindCSS**, **Pr
 - **Session Management:** Keeps the user logged in during their session.
 - **Sign Out:** Provides a way for users to log out.
 
+## Screenshots
+
+<p align="center">
+  <img src="public/images/Project1.png" width="400"/>
+</p>
+
+<p align="center">
+  <img src="public/images/Project2.png" width="400"/>
+</p>
+
+<p align="center">
+  <img src="public/images/Project3.png" width="400"/>
+</p>
+
+<p align="center">
+  <img src="public/images/Project4.png" width="400"/>
+</p>
+
 ## Installation
 
 ### Prerequisites
