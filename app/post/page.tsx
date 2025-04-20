@@ -50,8 +50,8 @@ export default function PostJob() {
   if (!session) return <p className="text-center mt-10 text-red-600">Please log in to post a job.</p>;
 
   return (
-    <div className="max-w-xl mx-auto">
-      <h1 className="text-xl font-bold mb-4">Post a Job</h1>
+    <div className="max-w-xl mx-auto bg-sky-200 p-8 rounded-md mb-5">
+      <h1 className="text-xl font-bold mb-4 text-center">Post a Job</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         {['title', 'company', 'location'].map((field) => (
           <input

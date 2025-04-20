@@ -50,7 +50,7 @@ export default function Dashboard() {
   if (!session) return <p className="text-center mt-10 text-red-600">Please log in to go dashboard.</p>;
 
   return (
-    <main className="max-w-4xl mx-auto mt-10 p-6 bg-white rounded shadow">
+    <main className="max-w-4xl mx-auto mt-10 p-8 bg-sky-200 rounded-md shadow">
       <h2 className="text-2xl font-bold mb-6">Admin Dashboard</h2>
 
       <hr className="my-6" />

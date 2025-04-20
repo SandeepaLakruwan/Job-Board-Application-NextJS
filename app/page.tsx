@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 interface Job {
@@ -25,7 +26,7 @@ export default function HomePage() {
     fetchJobs();
   }, []);
 
-  // Filter jobs based on search criteria
+  // Filter jobs based on search
   const filteredJobs = jobs.filter((job) => {
     const matchesType = searchType === 'All' || job.jobType.toLowerCase() === searchType.toLowerCase();
     const matchesLocation = searchLocation ? job.location.toLowerCase().includes(searchLocation.toLowerCase()) : true;
@@ -33,10 +34,10 @@ export default function HomePage() {
   });
 
   return (
-    <main className="max-w-5xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-6">Job Listings</h1>
+    <main className="max-w-5xl mx-auto p-6 bg-sky-200 rounded-md">
       
-      {/* Search filters */}
+      <h1 className="text-3xl font-bold mb-6 text-center">Job Listings</h1>
+      
       <div className="mb-6 flex gap-4">
         <select
           value={searchType}
@@ -58,7 +59,6 @@ export default function HomePage() {
         />
       </div>
 
-      {/* Job listings */}
       <div className="space-y-4">
         {filteredJobs.length === 0 ? (
           <p>No job postings found.</p>

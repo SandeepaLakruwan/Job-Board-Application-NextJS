@@ -30,7 +30,7 @@ export default function LoginPage() {
     <main className="h-screen flex items-center justify-center bg-gray-100">
       <form
         onSubmit={handleSubmit}
-        className="bg-white shadow-md rounded px-8 pt-6 pb-8 w-96"
+        className="bg-sky-200 shadow-md rounded px-8 pt-6 pb-8 w-96"
       >
         <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
         <div className="mb-4">
